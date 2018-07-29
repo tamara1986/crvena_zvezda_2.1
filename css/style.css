@@ -361,12 +361,12 @@ span.naslov h1{
     
 }
     section {
-    flex: 60%;
+    flex: 100%;
     background-color: #f1f1f1;
     padding: 20px;
 }
 aside {
-    flex: 40%;
+    flex: 100%;
     background-color: white;
     padding: 20px;
 }
