@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+    max-width:1000px; 
+    margin: 0 auto;
+}
+.wrapper {
+    
+    width: 1000px;
+    height: 100%;
+    display: flex;
+}
+header{
+    margin-top: 5px;
+    display: flex;
+
+    width: 100%;
+    background-color:  #921113;
+    /*position: sticky;
+    top: 0;*/
+    height: 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header a.logo{
+    display: flex;
+    /*float: left;*/
+    width: 15%;
+    height: 100%;
+    background-image: url(../img/fk_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav {
+    display: flex;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color:  #921113;
+    /*position: sticky;
+    top: 80px;*/
+    height: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    background-color: lightgrey;
+}
+nav ul li{
+    float: left;
+    line-height: 80px;
+    width: 25%;
+}
+nav ul li a{
+    display: block;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    background-color: #921113;
+}
+nav ul li a:hover{
+    color:#921113;
+    background-color: white;
+    text-decoration: none;
+}
+main {  
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eae6e6;
+}
+
+section {
+    flex: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+aside {
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+@media screen and (max-width: 400px) {
+    nav{   
+        flex-direction: column;
+    }
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    /*padding: 12px 16px;*/
+    display: block;
+    color: #921113;
+    background-color: white;
+    line-height: 25px;
+
+}
+.dropdown-content a:hover {background-color: #921113;
+    color:white ;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: black;
+    color: #921113;
+}
+section div.slika img{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+main > section,
+main > aside{
+    float: left;
+    padding: 2%;
+    padding-bottom: 0;
+    background-color: #eae6e6;
+}
+main > section{
+    width: 66%;
+    background-color: white;
+}
+main > aside{
+    width: 26%;
+    background-color: #eae6e6;
+}
+main h2{
+    text-transform: uppercase;
+    border-bottom: 3px solid #ad0101;
+}
+main aside h2{
+    border-bottom: 3px solid #cccccc;
+}
+main aside > div{
+    margin-bottom: 35px;
+}
+main section div p{
+    margin-top: 0;
+}
+main section a.read_more{
+    color: #ad0101;
+}
+.kosarkaski_klub{
+    width: 100%;
+}
+.kosarkaski_klub img{
+    width: 29%;
+    display: block;
+    float: right;
+    margin-left: 2%;
+}
+aside .tag_cloud a{
+    display: inline-block;
+    padding: 5px;
+    background-color: #727272;
+    text-decoration: none;
+    color: white;
+    margin: 3px 1px 3px 1px;
+}
+aside .tag_cloud a:hover{
+    background-color:#921113;
+    color: white;
+}
+.prvi_koraci img{
+    display: block;
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+aside .sidebar_add{
+    display: block;
+    width: 80%;
+    margin-top: 40px;
+    margin:0 auto;
+}
+aside .sidebar_add img{
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+}
+
+section p {
+    text-align: justify;
+}
+.druga_slika{
+    display: block;
+    float: right;
+    width: 38%;
+    margin-left:2%;
+    margin-bottom: 1%;
+}
+.druga_slika img{
+    display: block;
+    width: 100%;
+}
+table {
+width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eae6e6;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: #921113;
+    color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  font-size:12px; 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+aside .card #kartica1 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+aside .card #kartica1 ,th,td{
+    padding: 5px;
+    border:0px;
+}
+.spisak_klubova{
+    margin-bottom: 5px;
+}
+.naslov{
+    display: flex;
+    width: 80%;
+    font: italic bold 20px Times, serif;
+    color: white;
+    margin-right: 5%;
+    
+}
+span.naslov h1{
+    padding-top: 17px;
+    margin: 0 auto;
+    
+}
+#sportsko_drustvo header a.logo{
+    background-image: url(https://upload.wikimedia.org/wikipedia/el/thumb/f/fd/SD_Crvena_Zvezda.png/142px-SD_Crvena_Zvezda.png);
+    opacity: 0.9;
+}
+#kosarkaski_klub header a.logo{
+    background-image: url(https://upload.wikimedia.org/wikipedia/sh/8/86/KK_Zvezda_logo.png);
+    opacity: 0.9;
+}
+section a img:hover{
+    opacity: 0.6;
+}
+footer{
+    clear: both;
+    display: flex;
+    width: 100%;
+    background-color: #921113;
+    text-align: center;
+    font-weight: bolder;
+    height: 70px;
+    /*position: sticky;
+    bottom: 0px;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer div{
+    padding-top: 15px;
+    text-align: center;
+}
+footer div a{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+   
+    
+}
+@media only screen and (max-width: 800px){
+    section {
+    flex: 65%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+aside {
+    flex: 35%;
+    background-color: white;
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 670px){
+    section {
+    flex: 60%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+aside {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 580px){
+    section {
+    flex: 60%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+aside {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+nav ul li{
+    
+    line-height: 30px;
+    width: 100%;
+}
+nav ul{
+   padding-bottom: 10px;
+   background-color: #921113;
+}
+
+main{
+    margin-top: 150px;
+}
+}
